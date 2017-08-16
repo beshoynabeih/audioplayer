@@ -26,10 +26,13 @@ window.onload = function(){
 	var shuffle = __c("icon-control fa fa-random")[0];
 	var buffer = __c("song-buffer")[0];
 
-__c("menu-burger")[0].addEventListener("click", function(){
-	document.getElementById("audio-list-items").classList.toggle("invisible");
+__c("menu-burger")[0].addEventListener("click", function(event){
+	__("audio-list-items").classList.toggle("invisible");
+	event.stopPropagation();
 });
-
+document.body.addEventListener("click", function(){
+	__("audio-list-items").className = "invisible";
+});
 __c("song-board-content")[0].addEventListener("click", function(event){
 	aobj.currentTime = (event.offsetX/220)*aobj.duration;
 });
@@ -237,4 +240,6 @@ aobj.addEventListener("playing", function(){
 });
 addingSongsHTML();
 playLast();
+
+
 }//end of load
