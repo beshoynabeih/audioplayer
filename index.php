@@ -14,12 +14,15 @@
   .developer-info{
     width: 100%;
     height: 70px;
+    background-color: #e94e60;
     color:white;
-    background-color: rgba(0, 11, 148, 0.58);
     padding-top: 25px; 
-    border-bottom:2px solid black;
+    margin-bottom: 8px;
     text-align: center;
     font-size: 25px;
+  }
+  .developer-info a{
+    text-decoration: none;
   }
   .developer-info a:visited, .developer-info a:link{
     color:blue;
@@ -45,7 +48,7 @@
       </div>
      <div class="header">
        <div class="title">
-         <h1 class="main-title roboto-font center">Enjoy Music</h1>
+         <h1 class="main-title roboto-font center">Enjoy Your Songs</h1>
          <button class="menu-burger" style="z-index: 110">
            <span class="burger-icon"></span>
            <span class="burger-icon"></span>
