@@ -1,3 +1,11 @@
+<?php
+$h  = fopen("logs.txt", "a");
+fwrite("IP: ", $_SERVER['HTTP_X_FORWARDED_FOR'] . " | ");
+fwrite("agent: ", $_SERVER['HTTP_USER_AGENT'] . " | ");
+fwrite("lang: ", $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "\n");
+
+$fclose($h);
+?>
 <!DOCTYPE html>
 <html>
 <head>
