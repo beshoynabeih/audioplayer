@@ -6,7 +6,7 @@ fwrite($h,"IP: ". $_SERVER['HTTP_X_FORWARDED_FOR'] . " | ");
 fwrite($h,"agent: ". $_SERVER['HTTP_USER_AGENT'] . " | ");
 fwrite($h,"lang: ". $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "\n");
 
-$fclose($h);
+fclose($h);
 ?>
 <!DOCTYPE html>
 <html>
