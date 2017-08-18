@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors",1);
 $h  = fopen("logs.txt", "a");
 fwrite($h,"IP: ". $_SERVER['HTTP_X_FORWARDED_FOR'] . " | ");
 fwrite($h,"agent: ". $_SERVER['HTTP_USER_AGENT'] . " | ");
