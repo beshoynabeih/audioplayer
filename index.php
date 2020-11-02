@@ -41,7 +41,7 @@ fclose($h);
 </head>
 <body>
 <div class="developer-info">
-  contact me at: <a target="_blank" href="http://www.beshoynabeih.me">Beshoy Nabeih</a>
+  contact me at: <a target="_blank" href="https://beshoynabeih.github.io/cv/">Beshoy Nabeih</a>
 </div>
 <audio src="" id="audio-obj"></audio>
 <!-- <nav>
